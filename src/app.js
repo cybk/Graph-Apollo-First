@@ -1,8 +1,5 @@
-import express from 'express';
-import cors from 'cors';
+import server from './server';
 
-const app = express();
+server.listen();
 
-function setPort(port = 500) {
-    app.set('port', parseInt(port, 10));
-}
+export default server;
